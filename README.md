@@ -79,13 +79,13 @@ The EDA focuses on:
 ###  Example EDA Outputs
 
 #### **Top 10 Countries by Revenue**
-![Top Countries](eda/outputs/top10_countries.png)
+![Top Countries](eda/top10_countries.png)
 
 #### **Daily Revenue Trend**
-![Daily Revenue](eda/outputs/daily_revenue.png)
+![Daily Revenue](eda/daily_revenue.png)
 
 #### **Top 10 Products by Quantity**
-![Top Products](eda/outputs/top10_products.png)
+![Top Products](eda/top10_products.png)
 
 ---
 
