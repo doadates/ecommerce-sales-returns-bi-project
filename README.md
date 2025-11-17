@@ -4,10 +4,10 @@ This project analyzes e-commerce sales, return behavior, product performance, an
 
 ---
 
-## 🚀 1. Project Overview
+## Project Overview
 This project demonstrates a full analytics workflow:
 
-1. **Data Cleaning & Transformation** (Python + SQL)
+1. **Data Cleaning & Transformation** (Excel + SQL)
 2. **Staging Area Setup** (stg_sales)
 3. **Dimensional Data Modeling** (Star Schema)
 4. **EDA – Exploratory Data Analysis** (Python: Pandas, Seaborn, Plotly)
@@ -28,12 +28,28 @@ It reflects how data flows in a real analytics environment—from raw CSV → cl
 - **SQLAlchemy, mysql-connector-python**
 
 ---
+## 1. Dataset Source
 
-## 🧹 2. Data Cleaning (Excel)
+The dataset used in this project is the **Online Retail II** dataset from Kaggle:
+
+📎 **Dataset:** Online Retail II — UCI  
+🔗 **Source:** https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci
+
+It contains transactional data from a UK-based online retailer between **2010–2011**, including:
+- InvoiceNo  
+- StockCode  
+- Description  
+- Quantity  
+- InvoiceDate  
+- UnitPrice  
+- CustomerID  
+- Country  
+
+## 2. Data Cleaning (Excel)
 
 Before loading the dataset into SQL, an initial cleaning phase was performed in **Microsoft Excel** to ensure data quality and prepare the file for the staging table.
 
-## 🧱 2. Data Model (Star Schema)
+## 3. Data Model (Star Schema)
 
         dim_customer
               ▲
@@ -51,12 +67,7 @@ Before loading the dataset into SQL, an initial cleaning phase was performed in 
 
 This structure supports fast analytical queries and flexible reporting.
 
----
-
-
----
-
-## 🔍 4. Exploratory Data Analysis (Python)
+## 4. Exploratory Data Analysis (Python)
 
 The EDA focuses on:
 - Unit price distribution  
@@ -65,7 +76,7 @@ The EDA focuses on:
 - Top countries by revenue  
 - Top products by revenue & quantity  
 
-### 📈 Example EDA Outputs
+###  Example EDA Outputs
 
 #### **Top 10 Countries by Revenue**
 ![Top Countries](eda/outputs/top10_countries.png)
@@ -78,7 +89,7 @@ The EDA focuses on:
 
 ---
 
-## 📊 5. Power BI Dashboard
+## 5. Power BI Dashboard
 
 An interactive dashboard that provides:
 - Revenue KPIs  
@@ -88,12 +99,12 @@ An interactive dashboard that provides:
 - Top products by quantity & revenue  
 - Return impact analysis  
 
-### 📸 Dashboard Preview  
+### Dashboard Preview  
 ![Power BI Dashboard](powerbi/powerbi_dashboard.png)
 
 ---
 
-## 🧩 6. SQL Workflow Summary
+## 6. SQL Workflow Summary
 
 All SQL scripts are available in `sql/main.sql`.
 
@@ -110,8 +121,8 @@ Key steps:
 
 
 ## 8. Business Insights
-🇬🇧 United Kingdom generates 84% of all revenue.
-📦 A small group of products contributes disproportionately to sales.
-🔁 Return rate is 8.69%, with certain products driving the majority of returns.
-📈 Monthly revenue shows strong seasonal peaks toward the holiday period.
-🌍 Several countries contribute minimal revenue → potential expansion opportunities.
+- United Kingdom generates 84% of all revenue.
+- A small group of products contributes disproportionately to sales.
+- Return rate is 8.69%, with certain products driving the majority of returns.
+- Monthly revenue shows strong seasonal peaks toward the holiday period.
+- Several countries contribute minimal revenue → potential expansion opportunities.
