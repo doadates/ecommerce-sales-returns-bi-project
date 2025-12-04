@@ -1,4 +1,4 @@
-# 📊 E-Commerce Sales & Returns BI Project  
+# E-Commerce Sales & Returns BI Project  
 End-to-end data analytics pipeline built using **Python, SQL (MySQL), and Power BI**.  
 This project analyzes e-commerce sales, return behavior, product performance, and customer activity across two years of transaction data.
 
@@ -117,10 +117,10 @@ Key steps:
 
 ---
 
-## 🧪 7. Installation & Setup
 
 
-## 8. Business Insights
+
+## 7. Business Insights
 - United Kingdom generates 84% of all revenue.
 - A small group of products contributes disproportionately to sales.
 - Return rate is 8.69%, with certain products driving the majority of returns.
